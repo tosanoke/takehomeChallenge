@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Site</title>
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css" />
+  </head>
+  <body>
+    <main id="news">
+   <div class="home-container">          
+          <div class="news-list">
+            <h2>Latest News</h2>
+            <div class="container">
+              <!-- load news -->
+            </div>
+          </div>
+
+          <div class="create-news">
+            <h2 class="title">Create News</h2>
+            <form id="create-news-form" action="" method="post">
+              <input name="author" type="text" class="feedback-input" placeholder="Author" />
+              <input name="avatar" type="text" class="feedback-input" placeholder="Avatar" />
+              <input name="title" type="text" class="feedback-input" placeholder="Title" />
+              <input name="url" type="text" class="feedback-input" placeholder="Website Url" />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+   </div>
+     
+      
+   <div class="loading"></div>
+      <nav class="pagination-container">
+        <button
+          class="pagination-button"
+          id="prev-button"
+          aria-label="Previous page"
+          title="Previous page"
+        >
+          &lt;
+        </button>
+
+        <div id="pagination-numbers"></div>
+
+        <button
+          class="pagination-button"
+          id="next-button"
+          aria-label="Next page"
+          title="Next page"
+        >
+          &gt;
+        </button>
+      </nav>
+    </main>
+  </body>
+  <script src="../scripts/script.js" type="module"></script>
+  <!-- <script src="../scripts/networkRequests/api.js" type="module"></script> -->
+</html>

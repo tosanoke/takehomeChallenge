@@ -370,6 +370,5 @@ if (window.location.href.includes("editComment.html")) {
   document.addEventListener("DOMContentLoaded", handleEditComment());
 }
 
-console.log(window.location.href);
 
 

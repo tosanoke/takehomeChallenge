@@ -369,6 +369,6 @@ if (window.location.href.includes("edit.html")) {
 if (window.location.href.includes("editComment.html")) {
   document.addEventListener("DOMContentLoaded", handleEditComment());
 }
-
+console.log("working")
 
 

@@ -370,6 +370,9 @@ if (window.location.href.includes("editComment.html")) {
   document.addEventListener("load", handleEditComment());
 }
 
+if (window.location.href.includes("index.html")) {
+  document.addEventListener("load", () => console.log("its working"));
+}
 
 
 

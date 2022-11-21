@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <script src="../scripts/script.js" type="module" type="text/javascript">     
+    </script>
+    <script type="module">
+      import { editNewsForm } from "../scripts/script.js";
+      document.addEventListener("DOMContentLoaded", editNewsForm())
+    </script>
 </head>
 <body>
     <h1 class="edit-header">Edit News</h1>

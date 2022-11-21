@@ -81,7 +81,7 @@ const createNewsForm = async () => {
   });
 };
 
-const editNewsForm = async () => {
+export const editNewsForm = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get("id");
   const news = await getNewsById(id);
@@ -122,7 +122,7 @@ const handleDeleteNews = async () => {
   });
 };
 
-const handleHome = async () => {
+export const handleHome = async () => {
   const paginationNumbers = document.querySelector("#pagination-numbers");
   const nextButton = document.querySelector("#next-button");
   const prevButton = document.querySelector("#prev-button");
@@ -224,7 +224,7 @@ const handleHome = async () => {
   await createNewsForm();
 };
 
-const handleNewsDetails = async () => {
+export const handleNewsDetails = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const id = urlParams.get("id");
   const news = await getNewsById(id);
@@ -312,7 +312,7 @@ const showCommentsForm = async () => {
   });
 };
 
-const handleEditComment = async () => {
+export const handleEditComment = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const newsId = urlParams.get("newsId");
   const id = urlParams.get("id");
@@ -353,22 +353,3 @@ const handleDeleteComment = async (newsId) => {
     });
   });
 };
-
-if (window.location.href.includes("index.html")) {
-  document.addEventListener("DOMContentLoaded", handleHome());
-}
-
-if (window.location.href.includes("details.html")) {
-  document.addEventListener("DOMContentLoaded", handleNewsDetails());
-}
-
-if (window.location.href.includes("edit.html")) {
-  document.addEventListener("DOMContentLoaded", editNewsForm());
-}
-
-if (window.location.href.includes("editComment.html")) {
-  document.addEventListener("DOMContentLoaded", handleEditComment());
-}
-console.log(window.location.href);
-
-

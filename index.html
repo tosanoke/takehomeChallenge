@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Site</title>
     <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="scripts/script.js" type="module" ></script>
+    <script type="module">
+      import { handleHome } from "./scripts/script.js";
+      document.addEventListener("DOMContentLoaded", handleHome())
+    </script>
   </head>
   <body>
     <main id="news">
@@ -54,6 +59,5 @@
       </nav>
     </main>
   </body>
-  <script src="./scripts/script.js" type="module" type="text/javascript"></script>
-  <!-- <script src="../scripts/networkRequests/api.js" type="module"></script> -->
+  
 </html>

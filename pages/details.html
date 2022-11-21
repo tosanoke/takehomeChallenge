@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>news page</title>
     <link rel="stylesheet" href="../styles.css" type="text/css" />
+    <script src="../scripts/script.js" type="module" type="text/javascript">     
+    </script>
+    <script type="module">
+      import { handleNewsDetails } from "../scripts/script.js";
+      document.addEventListener("DOMContentLoaded", handleNewsDetails())
+    </script>
+    
   </head>
   <body>
-    <div class="news-details-container">
-      <!-- load comments -->
-        
-    </div>
-    <form id="comments-form" action="" method="post">  
-        <h3>Add a comment</h3>     
-        <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-        <input name="avatar" type="text" class="feedback-input" placeholder="Avatar" />
-        <textarea name="comment" class="feedback-input" placeholder="Comment"></textarea>
-        <input type="submit" value="Post"/>
-    </form>
-    <div class="comments-container">   
-    </div>
+    <main id="details-page">
+      <div class="news-details-container">
+        <!-- load comments -->
+          
+      </div>
+      <form id="comments-form" action="" method="post">  
+          <h3>Add a comment</h3>     
+          <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+          <input name="avatar" type="text" class="feedback-input" placeholder="Avatar" />
+          <textarea name="comment" class="feedback-input" placeholder="Comment"></textarea>
+          <input type="submit" value="Post"/>
+      </form>
+      <div class="comments-container">   
+      </div>
+    </main>
+  
 
-    <script src="../scripts/script.js" type="module" type="text/javascript"></script>
+  
   </body>
 </html>

@@ -355,24 +355,21 @@ const handleDeleteComment = async (newsId) => {
 };
 
 if (window.location.href.includes("index.html")) {
-  document.addEventListener("load", handleHome());
+  document.addEventListener("DOMContentLoaded", handleHome());
 }
 
 if (window.location.href.includes("details.html")) {
-  document.addEventListener("load", handleNewsDetails());
+  document.addEventListener("DOMContentLoaded", handleNewsDetails());
 }
 
 if (window.location.href.includes("edit.html")) {
-  document.addEventListener("load", editNewsForm());
+  document.addEventListener("DOMContentLoaded", editNewsForm());
 }
 
 if (window.location.href.includes("editComment.html")) {
-  document.addEventListener("load", handleEditComment());
+  document.addEventListener("DOMContentLoaded", handleEditComment());
 }
 
-if (window.location.href.includes("index.html")) {
-  document.addEventListener("load", () => console.log("its working"));
-}
 
 
 

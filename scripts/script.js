@@ -102,7 +102,7 @@ const editNewsForm = async () => {
     };
     const data = await updateNews(id, payload);
     if (data) {
-      window.location.assign("../pages/home.html");
+      window.location.assign("../index.html");
     }
   });
 };
@@ -354,7 +354,7 @@ const handleDeleteComment = async (newsId) => {
   });
 };
 
-if (window.location.href.includes("home.html")) {
+if (window.location.href.includes("index.html")) {
   document.addEventListener("load", handleHome());
 }
 

@@ -12,7 +12,6 @@ export const getAllNews = async () => {
       throw new Error(message);
     }
     const data = await response.json();
-
     return data;
   } catch (error) {
     console.log(error.message);
